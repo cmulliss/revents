@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Container } from 'semantic-ui-react'
 import EventDashboard from '../../features/event/event-dashboard/event-dashboard'
 import NavBar from '../../features/nav/navbar/nav-bar'
 import './App.css'
@@ -9,7 +10,9 @@ class App extends Component {
     return (
       <div>
         <NavBar />
-        <EventDashboard />
+        <Container className='main'>
+          <EventDashboard />
+        </Container>
       </div>
     )
   }
